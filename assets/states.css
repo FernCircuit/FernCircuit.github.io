@@ -1,0 +1,7 @@
+.toggle-subtasks{
+    display:none;
+}
+.rotate-arrow{
+transform: rotate(90deg);
+
+}

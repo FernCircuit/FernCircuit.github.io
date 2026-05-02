@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <!-- IMPORT CSS --->
+        <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/dashboard.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/states.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/fonts.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/media.css">
+        <!--- IMPORT GOOGLE FONTS --->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+        
+        <!--- IMPORT JS --->
+        <script src="assets/main.js" defer></script>
+    
+    </head>
+<body>
+    <!-- GRID #1 -->
+    <div id="grid-container-1"> 
+        <header>
+            <div class="header-image"></div>
+            <div class="header-logo"><a href="index.html" id="main-logo" class="font-qs">fern|circuit</a></div>
+            <div class="header-icons">
+                <a href="profile.html"><img src="assets/icons/icon-profile.svg"></a>
+                <a href="support.html"><img src="assets/icons/icon-help.svg"></a>
+            </div>
+        </header>
+        <aside>
+            
+        </aside>
+        <main>
+            <!-- GRID #2 -->
+            <div id="grid-container-2">
+                <!---------------------------- GRID #3a: TASK TRACKER -------------------------->
+                <!------------------------------------------------------------------------------>
+                <div class="grid-container-3" id="grid-container-3a">
+                    <!--TRACKER HEADER-->
+                    <div class="thead" id="thead-tracker">
+                        <span class="font-qs">tracker</span>
+                    </div>
+                    <!----------------------------START SAMPLE CONTENT -------------------------->
+                    <!---------- PRIMARY TASK 1 ---------->
+                    <div class="task-primary">
+                        <button class="box-action quick-action"><img src="assets/icons/icon-arrow.svg" class="arrow-btn" id="task-1"></span></button>
+                        <!--text box--><div class="box-text" id="text-1-0" contentEditable="false">Sample Task -- this is so cool!!</div>
+                        <button class="box-action quick-action action-complete"><img src="assets/icons/icon-check.svg"></button> <!-- QUICK ACTION: MODIFIES IN-LINE, DOES NOT OPEN FULL BOX -->
+                        <button class="box-action quick-action action-edit"><img src="assets/icons/icon-edit.svg" class="icon-edit"></button>
+                        <button class="box-action quick-action action-delete"><img src="assets/icons/icon-delete.svg" class="inactive-btn"></button>
+                        <button class="box-action quick-action action-add"><img src="assets/icons/icon-subtask.svg" class="inactive-btn"></button>
+                        <button class="box-action slow-action action-details"><img src="assets/icons/icon-view.svg" class="inactive-btn"></button> <!-- SLOW ACTION: OPENS FULL BOX TO EDIT MULTIPLE THINGS-->
+                        <button class="box-action quick-action task-status"><img src="assets/icons/icon-status.svg" class="icon-status"></button>
+                    </div>
+                    <!---------- TASK 1:1 ---------->
+                    <div class="subtask" data-group="task-1"> <!-- data-group matches primary task button id for toggling subtasks-->
+                        <div class="box-action quick-action hidden open"><img src="assets/icons/icon-subdir.svg"></div>
+                        <!--text box--><div class="box-text" id="text-1-1" contentEditable="false">Sample Subtask - use buttons on right to edit</div>
+                        <button class="box-action quick-action action-complete"><img src="assets/icons/icon-check.svg"></button> <!-- QUICK ACTION: MODIFIES IN-LINE, DOES NOT OPEN FULL BOX -->
+                        <button class="box-action quick-action action-edit"><img src="assets/icons/icon-edit.svg" class="icon-edit"></button>
+                        <button class="box-action quick-action action-delete"><img src="assets/icons/icon-delete.svg" class="inactive-btn"></button>
+                        <button class="box-action quick-action action-add"><img src="assets/icons/icon-subtask.svg" class="inactive-btn"></button>
+                        <button class="box-action slow-action action-details"><img src="assets/icons/icon-view.svg" class="inactive-btn"></button> <!-- SLOW ACTION: OPENS FULL BOX TO EDIT MULTIPLE THINGS-->
+                        <button class="box-action quick-action task-status"><img src="assets/icons/icon-status.svg" class="icon-status"></button>
+                    </div>
+                    <!---------- TASK 1:2 ---------->
+                    <div class="subtask" data-group="task-1">
+                        <div class="box-action quick-action hidden open"><img src="assets/icons/icon-subdir.svg"></div>
+                        <!--text box--><div class="box-text" id="text-1-2" contentEditable="false">Sample Subtask - click arrow to open/close subtasks</div>
+                        <button class="box-action quick-action action-complete"><img src="assets/icons/icon-check.svg"></button> <!-- QUICK ACTION: MODIFIES IN-LINE, DOES NOT OPEN FULL BOX -->
+                        <button class="box-action quick-action action-edit"><img src="assets/icons/icon-edit.svg" class="icon-edit"></button>
+                        <button class="box-action quick-action action-delete"><img src="assets/icons/icon-delete.svg" class="inactive-btn"></button>
+                        <button class="box-action quick-action action-add"><img src="assets/icons/icon-subtask.svg" class="inactive-btn"></button>
+                        <button class="box-action slow-action action-details"><img src="assets/icons/icon-view.svg" class="inactive-btn"></button> <!-- SLOW ACTION: OPENS FULL BOX TO EDIT MULTIPLE THINGS-->
+                        <button class="box-action quick-action task-status"><img src="assets/icons/icon-status.svg" class="icon-status"></button>
+                    </div>
+                    <!---------- TASK 1:3 ---------->
+                    <div class="subtask" data-group="task-1">
+                        <div class="box-action quick-action hidden open"><img src="assets/icons/icon-subdir.svg"></div>
+                        <!--text box--><div class="box-text" id="text-1-3" contentEditable="false">Subtask #1</div>
+                        <button class="box-action quick-action action-complete"><img src="assets/icons/icon-check.svg"></button> <!-- QUICK ACTION: MODIFIES IN-LINE, DOES NOT OPEN FULL BOX -->
+                        <button class="box-action quick-action action-edit"><img src="assets/icons/icon-edit.svg" class="icon-edit"></button>
+                        <button class="box-action quick-action action-delete"><img src="assets/icons/icon-delete.svg" class="inactive-btn"></button>
+                        <button class="box-action quick-action action-add"><img src="assets/icons/icon-subtask.svg" class="inactive-btn"></button>
+                        <button class="box-action slow-action action-details"><img src="assets/icons/icon-view.svg" class="inactive-btn"></button> <!-- SLOW ACTION: OPENS FULL BOX TO EDIT MULTIPLE THINGS-->
+                        <button class="box-action quick-action task-status"><img src="assets/icons/icon-status.svg" class="icon-status"></button>
+                    </div>
+                    <!---------- PRIMARY TASK 2 ---------->
+                    <!---------- TASK 2 ---------->
+                    <div class="task-primary">
+                        <button class="box-action quick-action"><img src="assets/icons/icon-arrow.svg" class="arrow-btn" id="task-2"></span></button>
+                        <!--text box--><div class="box-text" id="text-2-0" contentEditable="false">Sample Task</div>
+                        <button class="box-action quick-action action-complete"><img src="assets/icons/icon-check.svg"></button> <!-- QUICK ACTION: MODIFIES IN-LINE, DOES NOT OPEN FULL BOX -->
+                        <button class="box-action quick-action action-edit"><img src="assets/icons/icon-edit.svg" class="icon-edit"></button>
+                        <button class="box-action quick-action action-delete"><img src="assets/icons/icon-delete.svg" class="inactive-btn"></button>
+                        <button class="box-action quick-action action-add"><img src="assets/icons/icon-subtask.svg" class="inactive-btn"></button>
+                        <button class="box-action slow-action action-details"><img src="assets/icons/icon-view.svg" class="inactive-btn"></button> <!-- SLOW ACTION: OPENS FULL BOX TO EDIT MULTIPLE THINGS-->
+                        <button class="box-action quick-action task-status"><img src="assets/icons/icon-status.svg" class="icon-status"></button>
+                    </div>
+                    <!---------- TASK 2:1 ---------->
+                    <div class="subtask" data-group="task-2">
+                        <div class="box-action quick-action hidden open"><img src="assets/icons/icon-subdir.svg"></div>
+                        <!--text box--><div class="box-text" id="text-2-1" contentEditable="false">Subtask #1</div>
+                        <button class="box-action quick-action action-complete"><img src="assets/icons/icon-check.svg"></button> <!-- QUICK ACTION: MODIFIES IN-LINE, DOES NOT OPEN FULL BOX -->
+                        <button class="box-action quick-action action-edit"><img src="assets/icons/icon-edit.svg" class="icon-edit"></button>
+                        <button class="box-action quick-action action-delete"><img src="assets/icons/icon-delete.svg" class="inactive-btn"></button>
+                        <button class="box-action quick-action action-add"><img src="assets/icons/icon-subtask.svg" class="inactive-btn"></button>
+                        <button class="box-action slow-action action-details"><img src="assets/icons/icon-view.svg" class="inactive-btn"></button> <!-- SLOW ACTION: OPENS FULL BOX TO EDIT MULTIPLE THINGS-->
+                        <button class="box-action quick-action task-status"><img src="assets/icons/icon-status.svg" class="icon-status"></button>
+                    </div>
+                    <!---------- TASK 2:2 ---------->
+                    <div class="subtask" data-group="task-2">
+                        <div class="box-action quick-action hidden open"><img src="assets/icons/icon-subdir.svg"></div>
+                        <!--text box--><div class="box-text" id="text-2-2" contentEditable="false">Subtask #2</div>
+                        <button class="box-action quick-action action-complete"><img src="assets/icons/icon-check.svg"></button> <!-- QUICK ACTION: MODIFIES IN-LINE, DOES NOT OPEN FULL BOX -->
+                        <button class="box-action quick-action action-edit"><img src="assets/icons/icon-edit.svg" class="icon-edit"></button>
+                        <button class="box-action quick-action action-delete"><img src="assets/icons/icon-delete.svg" class="inactive-btn"></button>
+                        <button class="box-action quick-action action-add"><img src="assets/icons/icon-subtask.svg" class="inactive-btn"></button>
+                        <button class="box-action slow-action action-details"><img src="assets/icons/icon-view.svg" class="inactive-btn"></button> <!-- SLOW ACTION: OPENS FULL BOX TO EDIT MULTIPLE THINGS-->
+                        <button class="box-action quick-action task-status"><img src="assets/icons/icon-status.svg" class="icon-status"></button>
+                    </div>
+                    <!---------- TASK 2:3 ---------->
+                    <div class="subtask" data-group="task-2">
+                        <div class="box-action quick-action hidden open"><img src="assets/icons/icon-subdir.svg"></div>
+                        <!--text box--><div class="box-text" id="text-2-3" contentEditable="false">Subtask #3</div>
+                        <button class="box-action quick-action action-complete"><img src="assets/icons/icon-check.svg"></button> <!-- QUICK ACTION: MODIFIES IN-LINE, DOES NOT OPEN FULL BOX -->
+                        <button class="box-action quick-action action-edit"><img src="assets/icons/icon-edit.svg" class="icon-edit"></button>
+                        <button class="box-action quick-action action-delete"><img src="assets/icons/icon-delete.svg" class="inactive-btn"></button>
+                        <button class="box-action quick-action action-add"><img src="assets/icons/icon-subtask.svg" class="inactive-btn"></button>
+                        <button class="box-action slow-action action-details"><img src="assets/icons/icon-view.svg" class="inactive-btn"></button> <!-- SLOW ACTION: OPENS FULL BOX TO EDIT MULTIPLE THINGS-->
+                        <button class="box-action quick-action task-status"><img src="assets/icons/icon-status.svg" class="icon-status"></button>
+                    </div>
+                    <!---------- PRIMARY TASK 3 ---------->
+                    <!---------- TASK 3 ------------>
+                    <div class="task-primary">
+                        <button class="box-action quick-action">
+                            <img src="assets/icons/icon-arrow.svg" class="arrow-btn" id="task-3"></span>
+                        </button>
+                        <!--text box--><div class="box-text" id="text-3-0" contentEditable="false">Sample Task</div>
+                        <button class="box-action quick-action action-complete"><img src="assets/icons/icon-check.svg"></button> <!-- QUICK ACTION: MODIFIES IN-LINE, DOES NOT OPEN FULL BOX -->
+                        <button class="box-action quick-action action-edit"><img src="assets/icons/icon-edit.svg" class="icon-edit"></button>
+                        <button class="box-action quick-action action-delete"><img src="assets/icons/icon-delete.svg" class="inactive-btn"></button>
+                        <button class="box-action quick-action action-add"><img src="assets/icons/icon-subtask.svg" class="inactive-btn"></button>
+                        <button class="box-action slow-action action-details"><img src="assets/icons/icon-view.svg" class="inactive-btn"></button> <!-- SLOW ACTION: OPENS FULL BOX TO EDIT MULTIPLE THINGS-->
+                        <button class="box-action quick-action task-status"><img src="assets/icons/icon-status.svg" class="icon-status"></button>
+                    </div>
+                    <!---------- TASK 3:1 ---------->
+                    <div class="subtask" data-group="task-3">
+                        <div class="box-action quick-action hidden open"><img src="assets/icons/icon-subdir.svg"></div>
+                        <!--text box--><div class="box-text" id="text-3-1" contentEditable="false">Subtask #1</div>
+                        <button class="box-action quick-action action-complete"><img src="assets/icons/icon-check.svg"></button> <!-- QUICK ACTION: MODIFIES IN-LINE, DOES NOT OPEN FULL BOX -->
+                        <button class="box-action quick-action action-edit"><img src="assets/icons/icon-edit.svg" class="icon-edit"></button>
+                        <button class="box-action quick-action action-delete"><img src="assets/icons/icon-delete.svg" class="inactive-btn"></button>
+                        <button class="box-action quick-action action-add"><img src="assets/icons/icon-subtask.svg" class="inactive-btn"></button>
+                        <button class="box-action slow-action action-details"><img src="assets/icons/icon-view.svg" class="inactive-btn"></button> <!-- SLOW ACTION: OPENS FULL BOX TO EDIT MULTIPLE THINGS-->
+                        <button class="box-action quick-action task-status"><img src="assets/icons/icon-status.svg" class="icon-status"></button>
+                    </div>
+                    <!---------- TASK 3:2 ---------->
+                    <div class="subtask" data-group="task-3">
+                        <div class="box-action quick-action hidden open"><img src="assets/icons/icon-subdir.svg"></div>
+                        <!--text box--><div class="box-text" id="text-3-2" contentEditable="false">Subtask #2</div>
+                        <button class="box-action quick-action action-complete"><img src="assets/icons/icon-check.svg"></button> <!-- QUICK ACTION: MODIFIES IN-LINE, DOES NOT OPEN FULL BOX -->
+                        <button class="box-action quick-action action-edit"><img src="assets/icons/icon-edit.svg" class="icon-edit"></button>
+                        <button class="box-action quick-action action-delete"><img src="assets/icons/icon-delete.svg" class="inactive-btn"></button>
+                        <button class="box-action quick-action action-add"><img src="assets/icons/icon-subtask.svg" class="inactive-btn"></button>
+                        <button class="box-action slow-action action-details"><img src="assets/icons/icon-view.svg" class="inactive-btn"></button> <!-- SLOW ACTION: OPENS FULL BOX TO EDIT MULTIPLE THINGS-->
+                        <button class="box-action quick-action task-status"><img src="assets/icons/icon-status.svg" class="icon-status"></button>
+                    </div>
+                    <!---------- TASK 3:3 ---------->
+                    <div class="subtask" data-group="task-3">
+                        <div class="box-action quick-action hidden open"><img src="assets/icons/icon-subdir.svg"></div>
+                        <!--text box--><div class="box-text" id="text-3-3" contentEditable="false">Subtask #3</div>
+                        <button class="box-action quick-action action-complete"><img src="assets/icons/icon-check.svg"></button> <!-- QUICK ACTION: MODIFIES IN-LINE, DOES NOT OPEN FULL BOX -->
+                        <button class="box-action quick-action action-edit"><img src="assets/icons/icon-edit.svg" class="icon-edit"></button>
+                        <button class="box-action quick-action action-delete"><img src="assets/icons/icon-delete.svg" class="inactive-btn"></button>
+                        <button class="box-action quick-action action-add"><img src="assets/icons/icon-subtask.svg" class="inactive-btn"></button>
+                        <button class="box-action slow-action action-details"><img src="assets/icons/icon-view.svg" class="inactive-btn"></button> <!-- SLOW ACTION: OPENS FULL BOX TO EDIT MULTIPLE THINGS-->
+                        <button class="box-action quick-action task-status"><img src="assets/icons/icon-status.svg" class="icon-status"></button>
+                    </div>
+                    <!-------------------------------END SAMPLE CONTENT------------------------->
+                    <!--TRACKER FOOTER-->
+                    <div class="tfoot" id="tfoot-tracker"><input type="checkbox"><span class="arrow"></span></div>
+                </div>
+                <!---------------------------- GRID #3b: NOTES --------------------------------->
+                <!------------------------------------------------------------------------------>
+                <div class="grid-container-3" id="grid-container-3b">
+                    <!-- NOTES HEADER -->
+                    <div class="thead" id="thead-notes"><span class="font-qs">notepad</span></div>
+                    <!----------------------------START SAMPLE CONTENT ----------------------->
+                    <!-- SAMPLE DATA 1 -->
+                    <div class="box-text" id="notes-item">
+                        <textarea id="notepad" rows="1" cols="1" placeholder="Edit note..."></textarea>
+                        <time datetime="2026-04-7T17:00">Last Update: Apr 7, 2026 5pm</time>
+                    </div>
+                     <!--NOTES FOOTER-->
+                    <div class="tfoot" id="tfoot-notes"><input type="checkbox"><span class="arrow"></span></div>
+                </div>
+                <!---------------------------- GRID #3c: STATS --------------------------------->
+                <!------------------------------------------------------------------------------>
+                <div class="grid-container-3" id="grid-container-3c">
+                    <div class="thead" id="thead-stats"><span class="font-qs">metrics</span></div>
+                    <div class="box-text" id="stats-item"></div>
+                    <div class="box-action slow-action" id="stats-details"></div>
+                    <div class="tfoot" id="tfoot-stats"><input type="checkbox"><span class="arrow"></span></div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <span class="font-qsw footer-text">fern|circuit © Copyright 2026</span>
+            <span class="font-roboto footer-email"><a href="mailto:someone@example.com">support@ferncircuit.com</a></span>
+            <span class="font-roboto"><a href="support.html">Contact & Support</a></span>
+            <span class="font-roboto"><a href="about.html">About</a></span>
+        </footer>
+    </div>
+    
+</body>
+</html>

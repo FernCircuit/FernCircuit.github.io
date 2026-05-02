@@ -1,0 +1,22 @@
+/*------GOOGLE FONTS------*/
+.font-qs {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300; /* choose 300-700*/
+  font-style: normal;
+}
+.font-qsw {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500; /* choose 300-700*/
+  font-style: normal;
+}
+
+.font-roboto> {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}

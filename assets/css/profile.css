@@ -1,0 +1,47 @@
+/* ---------------LAYOUT------------------- */
+/*----------------------------------------- */
+
+#grid-container-2{
+    display:flex;
+    margin:40px;
+    align-items:stretch;
+    min-height:80vh;
+    flex-direction:column;
+    align-items:center;
+}
+#grid-container-3{ /*TRACKER*/
+    border: 0px solid lightgray;
+    width:60px;
+    flex-shrink:0;
+    width:60%;
+}
+
+#profile-row{
+    display:flex;
+    align-items:flex-start;
+    justify-content:center;
+    gap:10px;
+    height:auto;
+    width:60%;
+    padding:40px;
+}
+#profile-row > p{
+width:300px;
+}
+.profile-img{
+    width:150px;
+    height:150px;
+    border: 3px solid black;
+    border-radius: 80px 80px;
+}
+.profile-data{
+    width:1fr;
+}
+.support-row{
+    display:flex;
+    align-items:flex-start;
+    justify-content:space-between;
+}
+  #about-img{
+    width:300px;
+  }

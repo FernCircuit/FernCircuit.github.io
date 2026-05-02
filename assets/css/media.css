@@ -1,0 +1,91 @@
+/*Phones*/
+@media screen and (max-width: 600px) {
+    #grid-panel-2 {
+        flex-direction: column; 
+        padding-left: 20px;    
+        padding-right: 20px;
+        height: auto;       
+    }
+    #grid-container-3a {
+        grid-template-columns: 60px auto; 
+    }
+    
+    #grid-container-3b{ /*NOTES*/
+        display:none;
+     }
+     #grid-container-3c{ /*STATS*/
+       display:none;
+     }
+    
+    .sub-panel {
+        width: 100%;          
+        margin-bottom: 20px;  
+        border-right: none;   
+        border-left: none;
+        border-bottom: 2px solid #e0dee2; 
+    }
+
+    #grid-container-2 {
+        grid-template-rows: auto; 
+        height: auto;
+    }
+    #grid-container-1{
+        display:grid;
+        grid-template-columns:60px auto;
+        grid-template-rows:60px 1fr 40px;
+        grid-template-areas:
+            "head head"
+            "main main"
+            "foot foot";
+        gap:0px;
+        border: 0px solid;
+    }
+    aside{
+       visibility:hidden;
+    }
+    footer > .footer-text, footer > .footer-email{
+        display:none;
+    }
+    #grid-container-3a{ /*TRACKER*/
+        display:grid;
+        border: 0px solid lightgray;
+        grid-template-columns: 60px auto;
+        grid-auto-rows:40px;
+        margin-bottom:40px;
+        gap:0;
+    }
+}
+
+/*tablets*/
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    #grid-container-2 {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        height: auto;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "grid-item-tracker"
+            "grid-item-notes"
+            "grid-item-stats";
+    }
+    #grid-container-3a { /* TRACKER */
+        width: 100%;
+        max-height: 50vh; 
+        margin-bottom: 30px;
+        grid-template-columns: 60px auto repeat(3, 60px); 
+    }
+    #grid-container-3b, #grid-container-3c { /* NOTES & STATS */
+        display: grid; 
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    aside {
+        width: 60px;
+    }
+    footer{
+        display:flex;
+        justify-content:center;
+        gap:10px;
+    }
+}
